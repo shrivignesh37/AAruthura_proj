@@ -190,7 +190,7 @@
   backdrop-filter: blur(10px);
 }
 
-.infinity-trans1 {
+.ser-infinity-trans {
   background-image: url('./about_us_page.jpg');
   background-attachment: fixed;
   background-size: cover;
@@ -300,7 +300,7 @@
 
 /* Adding media query for .infinity-trans1 */
 @media screen and (max-width: 768px) {
-  .infinity-trans1 {
+  .ser-infinity-trans {
     height: 80vh;
     padding: 50px 0;
   }

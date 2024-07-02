@@ -78,7 +78,7 @@ const ServicePage = () => {
         <h1>~Building Relationships, One Conversation at a Time</h1>
       </div>
       <br />
-      <div className="infinity-trans1">
+      <div className="ser-infinity-trans">
         <div className="fixed-grid-container">
           <h2>Have a project in mind?</h2>
         </div>

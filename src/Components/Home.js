@@ -25,6 +25,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 
+<meta name="viewport" content="width=device-width" />
 const Home = () => {
 
   const [text, setText] = useState('');
@@ -148,7 +149,7 @@ const Home = () => {
           <h1>~Building Relationships, One Conversation at a Time</h1>
         </div>
         <div className="infinity-trans12">
-          <div className="fixed-grid-container1">
+          <div className="hom-fixed-grid-container1">
             <Marquee>Interior Design&nbsp;&nbsp;Modern Structures&nbsp;&nbsp;Modern Design&nbsp;&nbsp;Decoration</Marquee>
           </div>
         </div>
@@ -227,11 +228,11 @@ const Home = () => {
         <h1>~Building Relationships, One Conversation at a Time</h1>
       </div>
       <br></br>
-      <div className="infinity-trans">
-        <div className="fixed-grid-container" style={{marginTop:'-10px'}}>
+      <div className="hom-infinity-trans">
+        <div className="hom-fixed-grid-container" style={{marginTop:'-10px'}}>
         <h2>Have a project in mind?</h2>
         </div>  
-          <div className="Typerwritter">
+          <div className="hom-Typerwritter">
           {text}
           </div>
           <br></br>
