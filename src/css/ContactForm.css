@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: flex-start;
   max-width: 990px;
-  height: 60vh;
+  height: 70vh;
   margin: 70px auto 15%;
   padding: 40px;
   background-color: #f9f9f9;
@@ -12,6 +12,15 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 480px) {
+  .contact-form-container {
+    max-width: 200%;
+    height: auto;
+    margin-right:10vh;
+    margin: 20px auto;
+    padding: 80px;
+  }
+}
 .contact-form-info {
   flex: 1;
   color: #073842;
@@ -118,6 +127,7 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    height: auto;
   }
 
   .contact-form-info {
@@ -334,8 +344,8 @@
 }
 @media screen and (max-width: 768px) {
 .contact-form{
-  margin-top: 90vh;
-  margin-left:-72vh;
+  margin-top: 6vh;
+  margin-left: -1vh;
 }
   
 }

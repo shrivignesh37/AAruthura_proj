@@ -1,12 +1,12 @@
-import React,{ useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { GiHamburgerMenu } from "react-icons/gi";
+import Button from '@mui/material/Button';
 import '../css/ContactForm.css';
 import '../css/contact.css';
-import aboutImage from '../Asserts/about.png'; 
-import Button from '@mui/material/Button';
+import aboutImage from '../Asserts/about.png';
 
 const ContactForm = () => {
   const [text, setText] = useState('');
@@ -14,6 +14,7 @@ const ContactForm = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
+
   useEffect(() => {
     let index = 0;
     const interval = setInterval(() => {
@@ -84,22 +85,12 @@ const ContactForm = () => {
         <div className="contact-form-info">
           <h2>Contact Us</h2>
           <p>Show Room - No. 136, Nasiyanur Main Road, Veerappampalayam Privu, Erode - 638107.</p>
-          <div className="contact-info">
-            <div className="contact-item">
-              <FontAwesomeIcon icon={faEnvelope} />
-              <a href="mailto:aaruthrakarthik@gmail.com">aaruthrakarthik@gmail.com</a>
-            </div>
-            <div className="contact-item">
-            <FontAwesomeIcon icon={faPhone} />
-            <span>9865343636, 9659597788</span>
-            </div>
-            </div>
-            </div>
-            <div className="contact-form">
-              <img src={aboutImage} alt="About Us"  style={{marginTop :'-10vh',height:'60px'}} />
-              <h4  className="brandText" style={{fontSize:'40px'}}>Aaruthra Interiors</h4>
-              <form onSubmit={handleSubmit}>
-              <input
+        </div>
+        <div className="contact-form">
+          <img src={aboutImage} alt="About Us" style={{ marginTop: '-10vh', height: '60px' }} />
+          <h4 className="brandText" style={{ fontSize: '40px' }}>Aaruthra Interiors</h4>
+          <form onSubmit={handleSubmit}>
+            <input
               type="text"
               name="name"
               placeholder="Your Name"
@@ -121,16 +112,15 @@ const ContactForm = () => {
               value={formData.message}
               onChange={handleChange}
               required
-              ></textarea>
-            <button type="submit">Send Message</button>
+            ></textarea>
+            <Button variant="contained" color="primary" type="submit">Send Message</Button>
             {status === 'SUCCESS' && <p className="success-message">Message sent successfully!</p>}
             {status === 'ERROR' && <p className="error-message">Something went wrong. Please try again.</p>}
           </form>
         </div>
       </div>
 
-
-      <div className="tagline" style={{marginTop:'-50px',marginLeft:'-70vh'}}>
+      <div className="tagline" style={{ marginTop: '50px', marginLeft: '10vh' }}>
         <h1>~Building Relationships, One Conversation at a Time</h1>
       </div>
     </div>

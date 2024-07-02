@@ -1,6 +1,6 @@
 .home-main-nav {
     width: 100%;
-    height: 10rem;
+    height: 9rem;
     display: grid;
     font-size: 17px;
     grid-template-columns: 10rem 3fr 40rem 1fr 1rem;
@@ -13,7 +13,7 @@
   }
   
   .home-img {
-    height: 100vh;
+    height: 110vh;
     width: 700%;
     display: flex;
     justify-content: center;
@@ -386,7 +386,7 @@
 }
 .home-container{
     width: 204.5vh;
-    height: 637vh;
+    height: 643vh;
     overflow: hidden; 
 }
 
@@ -461,14 +461,7 @@
   }
 }
 
-.title2 {
-    font-size: 70px;
-    border-bottom: 0.1px solid rgb(236, 236, 236);
-    border-radius: 10px;
-    color: #073842;
-    margin-right: 120vh;
-    margin-top: -20vh;
-}
+
 
 @media (max-width: 768px) {
     .title2 {
@@ -516,11 +509,11 @@
 }
 
 .title2 {
-    font-size: 70px;
+    font-size: 50px;
     border-bottom: 0.1px solid rgb(236, 236, 236);
     border-radius: 10px;
     color: #073842;
-    margin-right: 120vh;
+    margin-right: 110vh;
     margin-top: -20vh;
 }
 
