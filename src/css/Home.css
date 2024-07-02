@@ -639,6 +639,15 @@
     opacity: 0.94;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
 }
+@media only screen and (max-width: 414px) {
+  .infinity-trans12 {
+      padding: 50px 0; /* Adjust padding for smaller screens */
+      height: 50vh; /* Adjust height for smaller screens */
+      width: 100vw;
+      border-radius: 0; /* Remove border-radius for smaller screens if needed */
+      opacity: 1; /* Adjust opacity as needed */
+  }
+}
 
 .fixed-grid-container1 {
     font-size: 100px;
