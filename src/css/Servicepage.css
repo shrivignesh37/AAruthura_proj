@@ -50,7 +50,7 @@
 }
 
 .serv-img {
-  background-image: url('./about_us_page.jpg');
+  background-image: url('../css/about_us_page.jpg');
   background-repeat: no-repeat;
   background-position: -1px -380px;
   background-size: cover;
