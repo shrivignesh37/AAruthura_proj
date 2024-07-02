@@ -1,0 +1,152 @@
+/* Base styles */
+.fly-ash-bricks-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+font-size: 16px;
+}
+
+.fly-ash-bricks-info h2,
+.fly-ash-bricks-info h3 {
+  color: #343a40;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Increase font size */
+}
+
+.fly-ash-bricks-info p,
+.fly-ash-bricks-info ul {
+  font-size: 1.2em; /* Increase font size */
+  color: #495057;
+  line-height: 1.8;
+}
+
+.fly-ash-bricks-info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.fly-ash-bricks-info ul li {
+  margin-bottom: 10px;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Highlight text */
+.highlight-text {
+  background-color: #e7f3ff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Animation and transition effects */
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+.fade-in-delay {
+  animation: fadeIn 1s ease-in 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out;
+}
+
+.slide-in-delay {
+  animation: slideIn 1s ease-out 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease-in-out;
+}
+
+.fade-in-list-item {
+  opacity: 0;
+  animation: fadeInList 1s ease-in-out forwards;
+}
+
+.fade-in-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.fade-in-list-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.fade-in-list-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.fade-in-list-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.fade-in-list-item:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.fade-in-list-item:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.fade-in-list-item:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.fade-in-list-item:nth-child(7) {
+  animation-delay: 1.4s;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInList {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

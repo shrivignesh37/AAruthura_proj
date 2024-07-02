@@ -1,0 +1,267 @@
+.small-carousel {
+  width: 74%; 
+  height: 80vh;
+  margin: 0 auto; 
+  margin-left: 29vh;
+  margin-top: - 4vh;  
+}
+
+.small-carousel .carousel-image {
+  height: 530px; 
+  object-fit: cover; 
+}
+
+@media screen and (max-width: 768px) {
+  .small-carousel {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .small-carousel .carousel-image {
+    height: 600px;
+  }
+}
+  
+.tagline{
+    font-size: 20px;
+    color: #073842;
+    margin-left: -90vh;
+    margin-top: -5vh;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .tagline {
+      font-size: 10px;
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
+
+.brandText{
+    font-size: 70px;
+  }
+
+  .title {
+    font-size: 100px;
+    border-bottom: 0.1px solid rgb(236, 236, 236);
+    border-radius: 10px;
+    color: #073842;
+    margin-right: 89vh;
+    margin-top: 10vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 60px;
+      margin-right: 0;
+      margin-top: 5vh;
+    }
+  }
+  .container-img{
+    background-image: url('about_us_page.jpg');
+    background-repeat: no-repeat;
+    background-position: -1px -380px;
+    background-size: cover;
+    height: 66vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container-img {
+      background-position: center;
+    }
+  }
+  
+  .text {
+    font-size: 20px;
+    color: #073842;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: -5vh;
+    text-align: justify;
+  }
+  
+
+.projects-timeline {
+  color: #073842;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  margin-top: 40px;
+  font-size: 4vh;
+}
+
+.projects-timeline h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-item {
+  font-size: 2.5vh;
+  background: #fff;
+  border-left: 4px solid #ff6347;
+  margin: 10px 0;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.timeline-item h3 {
+  margin-top: 0;
+  color: #ff6347;
+}
+
+.timeline-item:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #ff6347;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+  top: 20px;
+}
+
+
+.showcase-section {
+  padding: 40px 20px;
+  color: #073842;
+  background-color: #e9ecef;
+  margin-top: 40px;
+  font-size: 4vh;
+}
+
+.showcase-section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.showcase-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 2vh;
+}
+
+.showcase-item {
+  background: #fff;
+  margin: 10px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.showcase-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.showcase-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.showcase-item p {
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .timeline-item {
+    width: 90%;
+  }
+
+  .showcase-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase-item {
+    width: 100%;
+  }
+}
+ /* Aboutpage.css */
+
+.about-section1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.infinity-trans {
+  background-image: url('./about_us_page.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0; 
+  height: 60vh;
+  position: relative;
+}
+
+.fixed-grid-container {
+  font-size: 50px;
+  margin-left: 1vh;
+  margin-bottom: 3%;
+  color: #ffffff;
+}
+
+
+.Typerwritter {
+  color: #e9ecef;
+  margin-left: 72vh;
+  font-size: 40px;
+  margin-top: -2vh;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  width: fit-content;
+  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+@media (max-width: 768px) {
+  .Typerwritter {
+    margin-left: 5ch;
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+.title1 {
+  font-size: 70px;
+  border-bottom: 0.1px solid rgb(236, 236, 236);
+  border-radius: 10px;
+  color: #073842;
+  margin-right: 120vh;
+  margin-top: 4vh;
+}
+@media screen and (max-width: 768px) {
+  .title1 {
+    font-size: 50px;
+    margin-right: 0;
+    margin-top: 5vh;
+  }
+}
+

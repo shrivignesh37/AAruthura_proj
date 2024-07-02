@@ -1,0 +1,57 @@
+    <nav className="home-main-nav">
+          <div className="home-logo">
+            <h1 className="home-logoTxt">Aaruthra Interiors</h1>
+          </div>
+          <div className={showMediaIcons ? "home-menu-link home-mobile-menu-link" : "home-menu-link"}>
+            <ul>
+              <li>
+                <a href="/" onClick={handleMenuClick}>Home</a>
+              </li>
+              <li>
+                <a href="/About" onClick={handleMenuClick}>About</a>
+              </li>
+              <li>
+                <a href="/service" onClick={handleMenuClick}>Services</a>
+              </li>
+              <li>
+                <a href="/contact" onClick={handleMenuClick}>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div className="home-social-media">
+            <div className="home-hamburger-menu">
+              <button onClick={handleMenuClick} aria-label="Toggle Menu">
+                <GiHamburgerMenu />
+              </button>
+            </div>
+          </div>
+        </nav>
+  import React, { useState } from 'react';
+import ImageSlider from '../Components/slider';
+import AboutSection from '../Components/About';
+import Product from '../Components/products';
+import Image from './image';
+import { GiHamburgerMenu } from "react-icons/gi";
+import '../css/Home.css';
+import Img3 from '../css/about_us_page.jpg';
+function App() {
+  const [showMediaIcons, setShowMediaIcons] = useState(false);
+
+  const handleMenuClick = () => {
+    setShowMediaIcons(!showMediaIcons);
+  };
+
+  return (
+    <div className="App">
+      <div className="home-img">
+      <img src={Img3} alt="home-img" />
+      </div>
+      <ImageSlider />
+      <AboutSection />
+      <Product />
+      <Image />
+    </div>
+  );
+}
+
+export default App;

@@ -1,0 +1,341 @@
+.contact-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 990px;
+  height: 60vh;
+  margin: 70px auto 15%;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-info {
+  flex: 1;
+  color: #073842;
+  margin-right: 20px;
+  text-align: left;
+  min-width: 250px;
+}
+
+.contact-form-info h2 {
+  margin-bottom: 20px;
+  color: #073842;
+  font-size: 60px;
+}
+
+.contact-form-info p {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #073842;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-item svg {
+  margin-right: 20px;
+  color: #555;
+}
+
+.contact-item a {
+  font-size: 14px;
+  color: #3e4c55;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+  color: rgb(49, 109, 198);
+}
+
+.contact-item span {
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-form {
+  flex: 2;
+  min-width: 300px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.contact-form .success-message,
+.contact-form .error-message {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.contact-form .success-message {
+  color: green;
+}
+
+.contact-form .error-message {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .contact-form-info {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact-form {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-info h2 {
+    font-size: 18px;
+  }
+
+  .contact-form-info p {
+    font-size: 11px;
+  }
+
+  .contact-info span,
+  .contact-item a,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button,
+  .contact-form .success-message,
+  .contact-form .error-message {
+    font-size: 12px;
+  }
+}
+
+.con-nav {
+  width: 100%;
+  height: 10rem;
+  display: grid;
+  font-size: 17px;
+  grid-template-columns: 10rem 3fr 40rem 1fr 1rem;
+  background-color: rgba(227, 3, 3, 0);
+  backdrop-filter: blur(10px);
+}
+
+.con-img {
+  background-image: url('./about_us_page.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 86vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.con-logo {
+  display: grid;
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+
+.con-logo h1 {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(249, 249, 249);
+  text-align: left;
+}
+
+.con-logo h2 span {
+  font-size: 3.5rem;
+  color: red;
+}
+
+.con-logoTxt {
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.con-menu-link {
+  grid-column: 3/4;
+}
+
+.con-menu-link ul {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.con-menu-link ul li {
+  font-size: 1.8rem;
+}
+
+.con-menu-link ul li a {
+  text-transform: capitalize;
+  color: rgba(7, 7, 7, 0.8);
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+.con-menu-link ul li:hover > a {
+  font-weight: bold;
+  background-color: #22bad8;
+  border-radius: 10px;
+  color: rgb(250, 250, 250);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: fillBackground 0.3s forwards;
+}
+
+@keyframes fillBackground {
+  0% {
+    background-color: transparent;
+    height: 0;
+  }
+  100% {
+    background-color: #073842;
+    height: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .con-nav {
+    height: 8rem;
+    grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+  }
+
+  .con-logo,
+  .con-social-media ul {
+    height: 6rem;
+  }
+
+  .con-logo-image {
+    width: 2rem;
+    height: auto;
+    margin-right: 1rem;
+    margin-left: 5rem;
+  }
+
+  .con-logo h2 {
+    font-size: 2rem;
+  }
+
+  .con-social-media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .con-social-media .con-hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  .hero-section h1 {
+    font-size: 3.8rem;
+  }
+}
+
+.con-infinity-trans {
+  background-image: url('./about_us_page.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  height: 60vh;
+  position: relative;
+}
+
+.con-fixed-grid-container {
+  font-size: 50px;
+  margin-left: 1vh;
+  margin-bottom: 3%;
+  color: #ffffff;
+}
+
+.con-Typerwritter {
+  color: #e9ecef;
+  margin-left: 71vh;
+  font-size: 40px;
+  margin-top: -2vh;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  width: fit-content;
+  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
+@media (max-width: 768px) {
+  .con-Typerwritter {
+    margin-left: 17vh;
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  .con-infinity-trans {
+    height: 1vh;
+  }
+}
+@media screen and (max-width: 768px) {
+.contact-form{
+  margin-top: 90vh;
+  margin-left:-72vh;
+}
+  
+}

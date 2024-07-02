@@ -1,0 +1,99 @@
+.contact-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .t-border {
+    border-top: 3px solid #333;
+  }
+  
+  .section-spacer {
+    margin-top: 3rem;
+  }
+  
+  .contact-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .contact-info {
+    flex: 1 1 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .info-heading {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .info-text {
+    font-size: 1.6rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .whatsapp-link {
+    font-size: 1.6rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .whatsapp-link:hover {
+    color: #0056b3;
+  }
+  
+  .contact-form {
+    flex: 1 1 100%;
+  }
+  
+  .form-control {
+    border-radius: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-button {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .contact-info {
+      flex: 1 1 45%;
+    }
+    
+    .contact-form {
+      flex: 1 1 45%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .contact-info {
+      flex: 1 1 35%;
+    }
+    
+    .contact-form {
+      flex: 1 1 55%;
+    }
+  }
+  

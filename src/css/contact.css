@@ -1,0 +1,33 @@
+.contact-us {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .button-container button {
+    padding: 8px 16px; 
+    margin: 0 5px;
+    font-size: 14px; 
+    background-color: #427d41;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-container button:hover {
+    background-color: #333;
+  }

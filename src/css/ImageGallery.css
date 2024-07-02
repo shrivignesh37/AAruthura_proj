@@ -1,0 +1,87 @@
+/* ImageGallery.css */
+
+.image-gallery .container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gallery-heading {
+    font-size: 2rem; /* Adjust size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center;
+    color: #333; /* Color for the heading */
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns layout */
+    gap: 15px; /* Increase gap for better spacing */
+    width: 100%;
+  }
+  
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; /* Add a slight border radius for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition effects */
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Match the border radius of the container */
+  }
+  
+  .show-more-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px; /* Slightly larger font for better visibility */
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Increase border radius for consistency */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+  }
+  
+  .show-more-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  @media (max-width: 1200px) {
+    .gallery-grid {
+      grid-template-columns: repeat(3, 1fr); /* Adjust for medium screens */
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr); /* Adjust for small screens */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .gallery-grid {
+      grid-template-columns: 1fr; /* Adjust for extra small screens */
+      gap: 10px; /* Reduce gap for small screens */
+    }
+  
+    .show-more-button {
+      font-size: 14px; /* Adjust font size for small screens */
+      padding: 10px 16px;
+    }
+  }
+  

@@ -1,0 +1,101 @@
+/* Import a professional font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.about-section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h1 {
+  font-size: 90px;
+  font-weight: 900;
+  color: #073842;
+  text-align: left;
+  margin-left: 10rem;
+}
+
+.section-title1 h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 10rem;
+  padding-bottom: 5rem;
+  color: #073842;
+  text-align: left;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 800px;
+  text-align: left;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-text ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about-text ul li {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.services-menu {
+  background-color: #f9f9f9;
+  padding: 15px;
+}
+
+.services-menu ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  text-align: left;
+  padding-left: 15%;
+  margin-top: -3%;
+  font-weight: 900;
+}
+
+.services-menu li {
+  display: flex;
+  grid-gap: 5px; /* Divide by the number of menu items */
+  text-align: left;
+  padding: 5px;
+  font-size: 20px;
+  color: #203556; /* Add a separator between items */
+}
+
+/* Optional: Style the menu item text */
+.services-menu span {
+  font-weight: 300;
+  font-size: 20px;
+}
