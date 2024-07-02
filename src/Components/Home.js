@@ -77,34 +77,53 @@ const Home = () => {
 
   return (
     <div className='home-container'>
-      <nav className="home-main-nav">
-        <div className="home-logo">
-          <h1 className="home-logoTxt">Aaruthra Interiors</h1>
-        </div>
-        <div className={showMediaIcons ? "home-menu-link home-mobile-menu-link" : "home-menu-link"}>
-          <ul>
-            <li>
-              <a href="/" onClick={handleMenuClick}>Home</a>
-            </li>
-            <li>
-              <a href="/About" onClick={handleMenuClick}>About</a>
-            </li>
-            <li>
-              <a href="/service" onClick={handleMenuClick}>Services</a>
-            </li>
-            <li>
-              <a href="/contact" onClick={handleMenuClick}>Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div className="social-media">
-          <div className="hamburger-menu">
-            <button onClick={handleMenuClick} aria-label="Toggle Menu">
-              <GiHamburgerMenu />
-            </button>
-          </div>
-        </div>
-      </nav>
+    <nav className="home-main-nav">
+    <div className="home-logo">
+      <h1 className="home-logoTxt">Aaruthra Interiors</h1>
+    </div>
+    <div className={showMediaIcons ? "home-menu-link home-mobile-menu-link" : "home-menu-link"}>
+      <ul>
+        <li>
+          <a href="/" onClick={handleMenuClick}>Home</a>
+        </li>
+        <li>
+          <a href="/About" onClick={handleMenuClick}>About</a>
+        </li>
+        <li>
+          <a href="/service" onClick={handleMenuClick}>Services</a>
+        </li>
+        <li>
+          <a href="/contact" onClick={handleMenuClick}>Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div className="social-media">
+      <div className="hamburger-menu">
+        <button onClick={handleMenuClick} aria-label="Toggle Menu">
+          <GiHamburgerMenu />
+        </button>
+      </div>
+    </div>
+    {showMediaIcons && (
+      <div className="home-mobile-menu-overlay">
+        <button className="close-btn" onClick={handleMenuClick} aria-label="Close Menu">✖</button>
+        <ul>
+          <li>
+            <a href="/" onClick={handleMenuClick}>Home</a>
+          </li>
+          <li>
+            <a href="/About" onClick={handleMenuClick}>About</a>
+          </li>
+          <li>
+            <a href="/service" onClick={handleMenuClick}>Services</a>
+          </li>
+          <li>
+            <a href="/contact" onClick={handleMenuClick}>Contact</a>
+          </li>
+        </ul>
+      </div>
+    )}
+  </nav>
       
       <div className='app12'>
         <Slider ref={sliderRef} {...settings} className="slider1">

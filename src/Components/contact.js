@@ -51,36 +51,54 @@ const ContactForm = () => {
   return (
     <div>
       <div className="con-img">
-        <nav className="con-nav" style={{ backgroundColor: 'white' }}>
-          <div className="con-logo" style={{ backgroundColor: 'white' }}>
-            <h1 className="con-logoTxt" style={{ color: 'black' }}>Aaruthra Interiors</h1>
-          </div>
-          <div className={showMediaIcons ? "con-menu-link con-mobile-menu-link" : "con-menu-link"}>
-            <ul>
-              <li>
-                <a href="/" onClick={handleMenuClick}>Home</a>
-              </li>
-              <li>
-                <a href="/About" onClick={handleMenuClick}>About</a>
-              </li>
-              <li>
-                <a href="/service" onClick={handleMenuClick}>Services</a>
-              </li>
-              <li>
-                <a href="/contact" onClick={handleMenuClick}>Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div className="social-media">
-            <div className="hamburger-menu">
-              <button onClick={handleMenuClick} aria-label="Toggle Menu">
-                <GiHamburgerMenu />
-              </button>
-            </div>
-          </div>
-        </nav>
+      <nav className="con-main-nav">
+      <div className="con-logo">
+        <h1 className="con-logoTxt">Aaruthra Interiors</h1>
       </div>
-
+      <div className={showMediaIcons ? "con-menu-link con-mobile-menu-link" : "con-menu-link"}>
+        <ul>
+          <li>
+            <a href="/" onClick={handleMenuClick}>Home</a>
+          </li>
+          <li>
+            <a href="/About" onClick={handleMenuClick}>About</a>
+          </li>
+          <li>
+            <a href="/service" onClick={handleMenuClick}>Services</a>
+          </li>
+          <li>
+            <a href="/contact" onClick={handleMenuClick}>Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div className="social-media">
+        <div className="hamburger-menu">
+          <button onClick={handleMenuClick} aria-label="Toggle Menu">
+            <GiHamburgerMenu />
+          </button>
+        </div>
+      </div>
+      {showMediaIcons && (
+        <div className="con-mobile-menu-overlay">
+          <button className="close-btn" onClick={handleMenuClick} aria-label="Close Menu">✖</button>
+          <ul>
+            <li>
+              <a href="/" onClick={handleMenuClick}>Home</a>
+            </li>
+            <li>
+              <a href="/About" onClick={handleMenuClick}>About</a>
+            </li>
+            <li>
+              <a href="/service" onClick={handleMenuClick}>Services</a>
+            </li>
+            <li>
+              <a href="/contact" onClick={handleMenuClick}>Contact</a>
+            </li>
+          </ul>
+        </div>
+      )}
+    </nav>
+      </div>
       <div className="contact-form-container">
         <div className="contact-form-info">
           <h2>Contact Us</h2>

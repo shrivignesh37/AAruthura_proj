@@ -1,6 +1,6 @@
 .home-main-nav {
     width: 100%;
-    height: 10rem;
+    height: 9rem;
     display: grid;
     font-size: 17px;
     grid-template-columns: 10rem 3fr 40rem 1fr 1rem;
@@ -10,23 +10,6 @@
     left: 0;
     z-index: 1000;
     
-  }
-  
-  .home-img {
-    height: 100vh;
-    width: 700%;
-    display: flex;
-    justify-content: center;
-    color: transparent; /* Makes the text transparent */
-    -webkit-text-stroke: 1px #ffffff; /* Adds a white outline */
-    text-stroke: 1px #ffffff; /* Fallback for non-webkit browsers */
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    opacity: 0.94;
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-    background-image: linear-gradient(180deg, #0A0A0A91 100%, #F2295B00 100%);
   }
   
   .home-logo {
@@ -259,7 +242,290 @@
     .home-social-media .home-hamburger-menu {
       display: none;
     }
+  } 
+  .home-main-nav {
+    width: 100%;
+    height: 9rem;
+    display: grid;
+    font-size: 1.7rem; /* Changed to rem for scalability */
+    grid-template-columns: 10rem 3fr 40rem 1fr 1rem;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
   }
+  
+  .home-logo {
+    display: grid;
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .home-logo h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(253, 253, 253);
+    text-align: left;
+  }
+  
+  .home-logoTxt {
+    margin-bottom: 0.5rem; /* Changed to rem */
+    margin-left: 1rem; /* Changed to rem */
+  }
+  
+  .home-menu-link {
+    grid-column: 3/4;
+  }
+  
+  .home-menu-link ul {
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .home-menu-link ul li {
+    font-size: 1.8rem;
+  }
+  
+  .home-menu-link ul li a {
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.5s;
+    font-weight: 600;
+  }
+  
+  .home-menu-link ul li:hover > a {
+    font-weight: bold;
+    background-color: #22bad8;
+    border-radius: 10px;
+    color: rgb(250, 250, 250);
+    border: none;
+    padding: 1rem 2rem; /* Changed to rem */
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fillBackground 0.3s forwards;
+  }
+  
+  @keyframes fillBackground {
+    0% {
+      background-color: transparent;
+      height: 0;
+    }
+    100% {
+      background-color: #073842;
+      height: 100%;
+    }
+  }
+  
+  /* Combined media queries for better readability */
+  @media (max-width: 1080px) {
+    .home-main-nav {
+      height: 8rem;
+      grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+    }
+  
+    .home-logo,
+    .home-menu-link ul,
+    .home-social-media ul {
+      height: 8rem;
+    }
+  }
+
+  /*overly oda css*/
+  @media (max-width: 998px) {
+    .home-main-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background: #fff;
+      position: relative;
+    }
+  
+    .home-logo {
+      flex: 1;
+    }
+  
+    .home-logoTxt {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  
+    .home-menu-link {
+      display: none;
+    }
+  
+    .social-media {
+      display: flex;
+      align-items: center;
+    }
+  
+    .hamburger-menu button {
+      font-size: 2.5rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+  
+    .home-mobile-menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      overflow-y: auto;
+    }
+  
+    .home-mobile-menu-overlay .close-btn {
+      position: absolute;
+      top: 4rem;
+      left: 2rem;
+      background: none;
+      border: none;
+      font-size: 3rem;
+      cursor: pointer;
+    }
+  
+    .home-mobile-menu-overlay ul {
+      list-style-type:none;
+      padding: 1;
+      font-size: 20vh;
+    }
+  
+    .home-mobile-menu-overlay ul li {
+      margin: 5rem 0;
+      font-size: 3rem;
+      right: 1vh;
+      
+    }
+    
+    .home-mobile-menu-overlay ul li a {
+      color: black;
+      text-decoration: none;
+      font-family: "Times New Roman", Times, serif;
+    }
+  }
+    
+  @media (max-width: 798px) {
+    .home-main-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background: #fff;
+      position: relative;
+    }
+  
+    .home-logo {
+      flex: 1;
+    }
+  
+    .home-logoTxt {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  
+    .home-menu-link {
+      display: none;
+    }
+  
+    .social-media {
+      display: flex;
+      align-items: center;
+    }
+  
+    .hamburger-menu button {
+      font-size: 2.5rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+  
+    .home-mobile-menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      overflow-y: auto;
+    }
+  
+    .home-mobile-menu-overlay .close-btn {
+      position: absolute;
+      top: 4rem;
+      left: 2rem;
+      background: none;
+      border: none;
+      font-size: 3rem;
+      cursor: pointer;
+    }
+  
+    .home-mobile-menu-overlay ul {
+      list-style-type:none;
+      padding: 1;
+      font-size: 20vh;
+    }
+  
+    .home-mobile-menu-overlay ul li {
+      margin: 5rem 0;
+      font-size: 3rem;
+      right: 1vh;
+      
+    }
+    
+    .home-mobile-menu-overlay ul li a {
+      color: black;
+      text-decoration: none;
+      font-family: "Times New Roman", Times, serif;
+    }
+  }
+  @media (min-width: 999px) {
+    .home-social-media .home-hamburger-menu {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home-img {
+      background-position: center;
+    }
+  }
+  
+.home-img {
+  height: 100vh;
+  width: 700%;
+  display: flex;
+  justify-content: center;
+  color: transparent; /* Makes the text transparent */
+  -webkit-text-stroke: 1px #ffffff; /* Adds a white outline */
+  text-stroke: 1px #ffffff; /* Fallback for non-webkit browsers */
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0.94;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  background-image: linear-gradient(180deg, #0A0A0A91 100%, #F2295B00 100%);
+}
   .home-container {
     width: 204.5vh;
     height: 90vw;
@@ -352,7 +618,7 @@
 }
 .home-container{
     width: 204.5vh;
-    height: 637vh;
+    height: fit-content;
     overflow: hidden; 
 }
 
@@ -445,7 +711,7 @@
     }
 }
 .title2 {
-    font-size: 70px;
+    font-size: 67px;
     border-bottom: 0.1px solid rgb(236, 236, 236);
     border-radius: 10px;
     color: #073842;
