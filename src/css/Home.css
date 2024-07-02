@@ -917,6 +917,17 @@
   height: 60vh;
   position: relative;
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3),
+       only screen and (-min--moz-device-pixel-ratio: 3),
+       only screen and (-o-min-device-pixel-ratio: 3/1),
+       only screen and (min-device-pixel-ratio: 3) {
+  .hom-infinity-trans {
+    height: 90vh;
+    margin-bottom: 10vh;
+    padding: 50px 0;
+  }
+}
 @media (max-width: 768px) {
   .hom-infinity-trans {
     height: 90vh;
