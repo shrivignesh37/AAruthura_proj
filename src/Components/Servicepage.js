@@ -56,6 +56,25 @@ const ServicePage = () => {
               </button>
             </div>
           </div>
+          {showMediaIcons && (
+            <div className="home-mobile-menu-overlay">
+              <button className="close-btn" onClick={handleMenuClick} aria-label="Close Menu">✖</button>
+              <ul>
+                <li>
+                  <a href="/" onClick={handleMenuClick}>Home</a>
+                </li>
+                <li>
+                  <a href="/About" onClick={handleMenuClick}>About</a>
+                </li>
+                <li>
+                  <a href="/service" onClick={handleMenuClick}>Services</a>
+                </li>
+                <li>
+                  <a href="/contact" onClick={handleMenuClick}>Contact</a>
+                </li>
+              </ul>
+            </div>
+          )}
         </nav>
       </div>
       <div className="service-page">
