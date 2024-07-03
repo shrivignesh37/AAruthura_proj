@@ -32,38 +32,56 @@
     }, []);
 
     return (
-      <section id="about" className="about-section1">
-        <div className="container-img">
-          <nav className="main-nav">
-            <div className="logo">
-              <h1 className="logoTxt">Aaruthra Interiors</h1>
-            </div>
-            <div className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
-              <ul>
-                <li>
-                  <a href="/" onClick={handleMenuClick}>Home</a>
-                </li>
-                <li>
-                  <a href="/About" onClick={handleMenuClick}>About</a>
-                </li>
-                <li>
-                  <a href="/service" onClick={handleMenuClick}>Services</a>
-                </li>
-                <li>
-                  <a href="/contact" onClick={handleMenuClick}>Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div className="social-media">
-              <div className="hamburger-menu">
-                <button onClick={handleMenuClick} aria-label="Toggle Menu">
-                  <GiHamburgerMenu />
-                </button>
-              </div>
-            </div>
-          </nav>
+      <div className="home-container">
+      <div className="serv-img">
+      <nav className="home-main-nav">
+      <div className="home-logo">
+          <h1 className="home-logoTxt">Aaruthra Interiors</h1>
         </div>
-
+        <div className={showMediaIcons ? "home-menu-link home-mobile-menu-link" : "home-menu-link"}>
+          <ul>
+            <li>
+              <a href="/" onClick={handleMenuClick}>Home</a>
+            </li>
+            <li>
+              <a href="/About" onClick={handleMenuClick}>About</a>
+            </li>
+            <li>
+              <a href="/service" onClick={handleMenuClick}>Services</a>
+            </li>
+            <li>
+              <a href="/contact" onClick={handleMenuClick}>Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div className="social-media">
+          <div className="hamburger-menu">
+            <button onClick={handleMenuClick} aria-label="Toggle Menu">
+              <GiHamburgerMenu />
+            </button>
+          </div>
+        </div>
+        {showMediaIcons && (
+          <div className="home-mobile-menu-overlay">
+            <button className="close-btn" onClick={handleMenuClick} aria-label="Close Menu">✖</button>
+            <ul>
+              <li>
+                <a href="/" onClick={handleMenuClick}>Home</a>
+              </li>
+              <li>
+                <a href="/About" onClick={handleMenuClick}>About</a>
+              </li>
+              <li>
+                <a href="/service" onClick={handleMenuClick}>Services</a>
+              </li>
+              <li>
+                <a href="/contact" onClick={handleMenuClick}>Contact</a>
+              </li>
+            </ul>
+          </div>
+        )}
+      </nav>    
+      </div>
         <div className="container-abt">
           <div className="title">
             <h1>About Us</h1>
@@ -201,7 +219,7 @@
             }}>Contact Us</Button>
             </a>
         </div>
-      </section>
+        </div>
     );
   };
 

@@ -40,7 +40,7 @@ li {
 
 
 .logo h1 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 600;
   text-transform: uppercase;
   color: rgb(249, 249, 249);
@@ -203,9 +203,11 @@ li {
   }
 
   .mobile-menu-link {
-    background-color: rgb(160, 108, 108);
+    background-color: rgb(0, 0, 0);
     height: 20rem;
     display: grid;
+    margin-left: -2vh;
+    width: 60vh;
     grid-column: 2/5;
     align-items: center;
     padding-left: 3rem;

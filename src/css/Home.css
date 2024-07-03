@@ -657,14 +657,21 @@
     -webkit-text-stroke: 1px #ffffff; /* Adds a white outline */
     text-stroke: 1px #ffffff; /* Fallback for non-webkit browsers */
 }
-@media (max-width: 768px) {
+
+@media only screen and (max-width: 600px) {
+  .homecom2 {
+      margin-top: -44vh;
+      height: 0vh;
+  }
+}
+@media  only screen and (max-width: 768px) {
     .home-container {
         width: 100vw;
-        height: 1560vw;
+        height: fit-content;
     }
   
     .homecom2 {
-        margin-top:0vh;
+        margin-top:-7vh;
         height: auto;
     }
   
@@ -725,7 +732,7 @@
     border-radius: 10px;
     color: #073842;
     margin-right: 120vh;
-    margin-top: -20vh;
+    margin-top: -13vh;
 }
 
 @media (max-width: 768px) {
@@ -734,9 +741,19 @@
         margin-right: 0;
         margin-top: -1vh;
     }
+
+    .homecom3{
+      margin-top: 20vh;
+    }
 }
   .homecom3{
     margin-top: 20vh;
+  }
+  @media only screen and (min-width: 600px)  {
+    /* Your CSS code for small screens goes here */
+    .homecom3 {
+      margin-top: 10vh; /* Adjust the margin-top value as needed */
+    }
   }
 
 
@@ -930,8 +947,8 @@
 }
 @media (max-width: 768px) {
   .hom-infinity-trans {
-    height: 90vh;
-    margin-bottom: 10vh;
+    height:fit-content;
+    margin-bottom: 0vh;
     padding: 50px 0;
   }
 }

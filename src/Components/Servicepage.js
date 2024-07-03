@@ -27,7 +27,7 @@ const ServicePage = () => {
   }, []);
 
   return (
-    <div>
+    <div className='home-container'>
       <div className="serv-img">
         <nav className="main-nav" style={{backgroundColor:'CaptionText'}}>
           <div className="logo">

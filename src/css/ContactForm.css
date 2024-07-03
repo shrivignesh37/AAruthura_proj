@@ -380,7 +380,7 @@
   .hamburger-menu button {
     font-size: 2.5rem;
     cursor: pointer;
-    background: none;
+    color: white;
     border: none;
   }
 

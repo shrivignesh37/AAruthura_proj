@@ -24,7 +24,7 @@
 }
   
 .tagline{
-    font-size: 20px;
+    font-size: 18px;
     color: #073842;
     margin-left: -90vh;
     margin-top: -5vh;
@@ -38,9 +38,24 @@
     }
   }
 
-.brandText{
-    font-size: 70px;
+.brandText {
+  font-size: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .brandText {
+    font-size: 35px;
+    margin-right:-6vh;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .about-image{
+    font-size: 1vh;
+    margin-right:-6vh;
+  }
+  
+}
 
   .title {
     font-size: 100px;
@@ -93,16 +108,26 @@
   font-size: 4vh;
 }
 
-.projects-timeline h2 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
+@media screen and (max-width: 768px) {
+  .projects-timeline h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
 }
 
 .timeline {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: -5vh;
+  }
 }
 
 .timeline-item {
@@ -139,6 +164,17 @@
   background-color: #e9ecef;
   margin-top: 40px;
   font-size: 4vh;
+}
+
+@media screen and (max-width: 768px){
+  .showcase-section {
+    padding: 40px 20px;
+    color: #073842;
+    background-color: #e9ecef;
+    margin-top: 40px;
+    font-size: 4vh;
+    margin-left:5vh;
+  }
 }
 
 .showcase-section h2 {
@@ -212,6 +248,14 @@
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .infinity-trans {
+    height:fit-content;
+    margin-bottom: 0vh;
+    padding: 50px 0;
+  }
+}
+
 .fixed-grid-container {
   font-size: 50px;
   margin-left: 1vh;
@@ -244,13 +288,13 @@
 
 @media (max-width: 768px) {
   .Typerwritter {
-    margin-left: 5ch;
-    font-size: 30px;
+    margin-left:10vh;
+    font-size: 20px;
     margin-top: 0;
   }
 }
 .title1 {
-  font-size: 70px;
+  font-size: 52px;
   border-bottom: 0.1px solid rgb(236, 236, 236);
   border-radius: 10px;
   color: #073842;
@@ -262,6 +306,31 @@
     font-size: 50px;
     margin-right: 0;
     margin-top: 5vh;
+  }
+}
+
+.ser-infinity-trans{
+  background-image: linear-gradient(180deg, #0A0A0A91 100%, #F2295B00 100%), url('./scrollhome.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  height: 70vh;
+  width: 98.9vw;
+  position: relative;
+  backdrop-filter: blur(20px);
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0.94;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+@media (max-width: 768px) {
+  .ser-infinity-trans {
+    height: 90vh;
+    width: 56vh;
+    padding: 30px 0;
   }
 }
 
