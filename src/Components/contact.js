@@ -49,7 +49,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div>
+    <div className="home-container">
       <div className="con-img">
       <nav className="con-main-nav">
       <div className="con-logo">
