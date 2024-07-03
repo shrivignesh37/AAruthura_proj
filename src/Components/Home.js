@@ -98,7 +98,7 @@ const Home = () => {
       </ul>
     </div>
     <div className="social-media">
-      <div className="hamburger-menu">
+      <div className="hamburger-menu" style={{marginRight:'1vh'}}>
         <button onClick={handleMenuClick} aria-label="Toggle Menu">
           <GiHamburgerMenu />
         </button>
