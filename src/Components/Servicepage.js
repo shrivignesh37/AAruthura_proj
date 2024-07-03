@@ -29,9 +29,9 @@ const ServicePage = () => {
   return (
     <div className='home-container'>
       <div className="serv-img">
-        <nav className="main-nav" style={{backgroundColor:'CaptionText'}}>
-          <div className="logo">
-            <h1 className="logoTxt">Aaruthra Interiors</h1>
+        <nav className="home-main-nav">
+          <div className="home-logo">
+            <h1 className="home-logoTxt">Aaruthra Interiors</h1>
           </div>
           <div className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
             <ul>

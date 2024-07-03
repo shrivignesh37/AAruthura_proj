@@ -51,9 +51,9 @@ const ContactForm = () => {
   return (
     <div className="home-container">
       <div className="con-img">
-      <nav className="con-main-nav">
-      <div className="con-logo">
-        <h1 className="con-logoTxt">Aaruthra Interiors</h1>
+      <nav className="home-main-nav">
+      <div className="home-logo">
+        <h1 className="home-logoTxt">Aaruthra Interiors</h1>
       </div>
       <div className={showMediaIcons ? "con-menu-link con-mobile-menu-link" : "con-menu-link"}>
         <ul>
@@ -79,7 +79,7 @@ const ContactForm = () => {
         </div>
       </div>
       {showMediaIcons && (
-        <div className="con-mobile-menu-overlay">
+        <div className="home-mobile-menu-overlay">
           <button className="close-btn" onClick={handleMenuClick} aria-label="Close Menu">✖</button>
           <ul>
             <li>
