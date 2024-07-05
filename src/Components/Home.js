@@ -178,7 +178,7 @@ const Home = () => {
         <div className="title2">
           <h1>About Us</h1>
         </div>
-        <div className="tagline">
+        <div className="hometagline">
           <h1>~Where Imagination Meets Interiors</h1>
         </div>
         <div className="carousle_container small-carousel">
@@ -204,7 +204,7 @@ const Home = () => {
       </div>
       <Product />
       </div>
-      <div className='hometagline'>
+      <div className='hometagline1'>
       "Discover Our Passion for Creating Timeless and Innovative Designs"
       </div>
       <div className="homecontent">

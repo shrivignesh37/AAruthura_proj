@@ -68,7 +68,7 @@
 }
 
 .ser-title {
-  font-size: 60px;
+  font-size: 2vw;
   border-bottom: 0.1px solid rgb(236, 236, 236);
   border-radius: 10px;
   color: #073842;
@@ -89,7 +89,7 @@
   font-size: 20px;
   color: #073842;
   margin-left: 10px;
-  margin-top: -5vh;
+  margin-top: -1vh;
   transition: font-size 0.5s ease-in-out, margin-left 0.5s ease-in-out, margin-top 0.5s ease-in-out;
 }
 
@@ -307,7 +307,7 @@
 }
 
 .title34 {
-  font-size: 60px;
+  font-size: 30px;
   border-bottom: 0.1px solid rgb(236, 236, 236);
   border-radius: 10px;
   color: #073842;
